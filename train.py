@@ -33,7 +33,7 @@ dt_acc = accuracy_score(y_test, dt_pred)
 # Random Forest
 # -----------------------------
 rf_model = RandomForestClassifier(
-    n_estimators=10,
+    n_estimators=300,
     random_state=42
 )
 
