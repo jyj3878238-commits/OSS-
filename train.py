@@ -32,7 +32,10 @@ dt_acc = accuracy_score(y_test, dt_pred)
 # -----------------------------
 # Random Forest
 # -----------------------------
-rf_model = RandomForestClassifier(random_state=42)
+rf_model = RandomForestClassifier(
+    n_estimators=10,
+    random_state=42
+)
 
 rf_model.fit(X_train, y_train)
 
